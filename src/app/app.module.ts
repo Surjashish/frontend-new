@@ -25,17 +25,21 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import {LoginComponent} from './login/login.component';
 import { MyPostsComponent } from './my-posts/my-posts.component';
 import{FooterComponent} from './footer/footer.component';
+import{UploadComponent} from './upload/upload.component';
+
+import {MatProgressBarModule} from '@angular/material/progress-bar'; 
 
 @NgModule({
   declarations: [AppComponent, LoggedInNavbarComponent, VideoComponent, DashboardComponent,
      UserRegistrationComponent, LoggedOutNavbarComponent,TrendingvideosComponent, JumbotronComponent,
-     CarouselComponent, LandingPageComponent,LoginComponent, MyPostsComponent, FooterComponent],
+     CarouselComponent, LandingPageComponent,LoginComponent, MyPostsComponent, FooterComponent,
+     UploadComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule,
             MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule,MatListModule,
             FlexLayoutModule,MatIconModule, MatAutocompleteModule, MatInputModule, 
             MatFormFieldModule, MatSidenavModule,MatVideoModule,MatGridListModule, 
             MatTabsModule,MatStepperModule, ReactiveFormsModule,MatDatepickerModule,HttpClientModule,
-            MatNativeDateModule,MatJumbotronModule,MatDividerModule ],
+            MatNativeDateModule,MatJumbotronModule,MatDividerModule,MatProgressBarModule ],
   providers: [],
   bootstrap: [AppComponent]
 })

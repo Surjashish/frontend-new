@@ -5,6 +5,7 @@ import {LandingPageComponent} from './landing-page/landing-page.component';
 import {LoginComponent} from './login/login.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import { MyPostsComponent } from './my-posts/my-posts.component';
+import {UploadComponent} from './upload/upload.component';
 
 
 const routes : Routes = [
@@ -13,7 +14,8 @@ const routes : Routes = [
   {path: 'home', component: LandingPageComponent},
   {path: 'login', component: LoginComponent},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'myPosts', component: MyPostsComponent}
+  {path: 'myPosts', component: MyPostsComponent},
+  {path: 'upload', component: UploadComponent}
 
 
 ]
