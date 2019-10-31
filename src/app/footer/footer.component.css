@@ -1,0 +1,15 @@
+#footer{
+    color:white;
+    background-color: #673ab7;
+}
+#footer-container{
+    margin-top:5px;
+}
+#icons{
+    color:white;
+}
+#icons:hover{
+    font-size:150%;
+    transition-property: all;
+  transition-duration: 0.5s;
+}

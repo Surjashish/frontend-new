@@ -1,0 +1,59 @@
+<!-- <link href="https://fonts.googleapis.com/css?family=Chilanka" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+<mat-toolbar style="font-size: 25px;">
+  <div>Your Posts</div>
+</mat-toolbar>
+
+<h2>Recent Posts: </h2>
+<!-- <mat-grid-list cols="3" rowHeight="1:1">
+        <mat-grid-tile class="tile">
+          <mat-card class="example-card">
+      
+            <mat-video [autoplay]="true" [preload]="true" [fullscreen]="true" [download]="false" color="accent"
+              spinner="spin">
+              <source src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/ollie.mp4"
+                type="video/mp4">
+            </mat-video>
+            <br>
+            <mat-card-title><u>Attacks on the Broken Boulevard</u></mat-card-title>
+      
+            <i class="material-icons">date_range</i><span class="details">29-10-2019</span>
+            <i class="material-icons">remove_red_eye</i><span class="details">9854</span>
+            <mat-card-actions>
+              <button mat-icon-button><i class="material-icons" style="font-size: 24px">thumb_up</i></button>
+              <button mat-icon-button><i class="material-icons" style="font-size: 24px">thumb_down</i></button>&nbsp;
+              <button mat-icon-button><i class="material-icons" style="font-size: 24px">flag</i>Report</button>
+            </mat-card-actions>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list> -->
+
+
+<mat-grid-list cols="3" rowHeight="1:1">
+  <section *ngFor="let m of posts">
+    <mat-grid-tile class="tile">
+      <mat-card class="example-card">
+        <mat-video [autoplay]="false" [preload]="true" [fullscreen]="true" [download]="false" color="accent"
+          spinner="spin">
+          <source src={{m.video_url}} type="video/mp4">
+        </mat-video>
+        <br>
+        <mat-card-title><u>{{m.title}}</u></mat-card-title>
+
+        <mat-card-actions>
+          <button mat-icon-button><i class="material-icons" style="font-size: 24px">thumb_up</i></button>
+          <button mat-icon-button><i class="material-icons" style="font-size: 24px">thumb_down</i></button>&nbsp;
+          <button mat-icon-button><i class="material-icons" style="font-size: 24px">flag</i>Report</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </section>
+</mat-grid-list>
+<br>
+
+<!-- <mat-toolbar> -->
+  <footer>
+    <button mat-button class="foot" routerLink="/dashboard">Back</button>
+  </footer>
+<!-- </mat-toolbar> -->

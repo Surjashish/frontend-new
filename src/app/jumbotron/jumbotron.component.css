@@ -1,0 +1,18 @@
+.features:hover{
+    font-size:150%;
+    transition-property: all;
+  transition-duration: 0.5s;
+ 
+}
+.jumbotron{
+    /* max-height: 300px; */
+    min-height: 50%;
+    background-image: url("../../assets/images/beautiful-sunset.jpg"); 
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    
+}
+
+.content{
+   background-color: aqua;
+}
